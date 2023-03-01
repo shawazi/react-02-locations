@@ -17,5 +17,6 @@ body {
   padding-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 20rem;
+  justify-content: center;
 }

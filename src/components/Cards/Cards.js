@@ -1,5 +1,5 @@
 import data from "../../helper/data";
-import React from "react";
+// import React, { useState } from "react";
 import './cards.css';
 
 const Cards = () => {
@@ -9,10 +9,12 @@ const Cards = () => {
     return (
         <div className="container">
             {data.map((item) => (
-            <div className="card">
+            <div key={item.id} className="card">
                 <h2>{item.title}</h2>
                 <img src={item.image} alt={item.title} />
-                <p>{item.desc}</p>    
+                <div className="hide">
+                    <p>{item.desc}</p>    
+                </div>
             </div>
             ))}
         </div>
