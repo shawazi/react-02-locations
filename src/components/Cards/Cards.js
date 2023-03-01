@@ -4,12 +4,15 @@ import './cards.css';
 
 const Cards = () => {
 
+    // const [display, setDisplay] = useState(false);
+
     return (
         <div className="container">
             {data.map((item) => (
             <div className="card">
                 <h2>{item.title}</h2>
                 <img src={item.image} alt={item.title} />
+                <p>{item.desc}</p>    
             </div>
             ))}
         </div>
