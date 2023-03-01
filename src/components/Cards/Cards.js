@@ -12,8 +12,8 @@ const Cards = () => {
             <div key={item.id} className="card">
                 <h2>{item.title}</h2>
                 <img src={item.image} alt={item.title} />
-                <div className="hide">
-                    <p>{item.desc}</p>    
+                <div>
+                    <p className="hide">{item.desc}</p>    
                 </div>
             </div>
             ))}
